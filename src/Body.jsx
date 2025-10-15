@@ -36,7 +36,6 @@ function Body() {
   
   return (
     <>
-    <h1>Body World</h1>
     <div className="meme-container">
       
       {  memes.map((meme, i) => (

@@ -195,14 +195,12 @@ const LiveChatWindow = () => {
         const i = setInterval(() => {
             loadData();
          }
-            , 1);
+            , 1000);
         return () => clearInterval(i)
     }, [])
 
     async function loadData() {
-        const data = await fetch('https://dummyjson.com/comments');
-        const jsonData = await data.json();
-        console.log(jsonData);
+      
 
         const liveMessageData = [
             {
