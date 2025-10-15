@@ -27,7 +27,6 @@ function App() {
   return (
     <>
     <header style={{display: 'flex', gap:'20px', background: 'black', color: 'white', fontSize: '24px', fontWeight:'700', padding: "20px 0"}}>
-      Hello World
       <nav style={{display:'flex', gap: '20px'}}>
         <Link to="/">Home</Link> 
         <Link to="/about">About</Link>
@@ -50,7 +49,8 @@ function App() {
       </div>
       </header>
    
-        <Routes>
+        <div style={{padding:'20px'}}>
+          <Routes>
         <Route path="/" element={<Body />}></Route>
 
         <Route element={<ProtectedRoute/>}>
@@ -72,6 +72,7 @@ function App() {
         <Route path="/searchUI" element={<SearchUI/>}></Route>
 
         </Routes>
+        </div>
     
     
    
